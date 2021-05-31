@@ -9,7 +9,8 @@ class FileTreeHelper
 public:
     FileTreeHelper();
 
-    static QList<QTreeWidgetItem*> Items(const QString& a);
+    static QList<QTreeWidgetItem*> Items(const QString& path);
+    static void Dir(QList<QTreeWidgetItem*>* a, const QString& path, QTreeWidgetItem* parent);
 };
 
 #endif // FILETREEHELPER_H
